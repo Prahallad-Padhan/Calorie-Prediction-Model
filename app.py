@@ -19,7 +19,7 @@ model = joblib.load('calorie_prediction_model.pkl')
 
 @app.route('/')
 def index():
-    return render_template('form.html')
+    return render_template('formcalorie.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -62,7 +62,7 @@ def predict():
 
         # Predict calories needed
         predicted_calories = model.predict(user_data)
-        return render_template('result.html', calories=round(predicted_calories[0], 2))
+        return render_template('formcalorie.html', calories=round(predicted_calories[0], 2))
 
     except Exception as e:
         return f"An error occurred: {str(e)}", 400
