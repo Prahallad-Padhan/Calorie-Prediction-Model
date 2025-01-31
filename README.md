@@ -1,4 +1,4 @@
-Calorie Prediction Model
+#Calorie Prediction Model
 This repository contains a machine learning model designed to predict the number of calories burned during physical activities based on various input features. The project is useful for fitness applications and health-related analytics.
 
 Table of Contents
